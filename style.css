@@ -9,8 +9,6 @@
 .inter-font {
   font-family: "Inter", sans-serif;
   font-size: 1.38rem;
-  /* font-optical-sizing: auto; */
-  /* font-style: normal; */
 }
 /* shared style */
 .display-flex{
@@ -61,14 +59,43 @@ main{
 }
 main section{
     margin-top: 120px;
+    width: 100%;
 }
 /* plant items style */
+.plant-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
 .plant-content{
     text-align: center;
     justify-content: center;
 }
+.plant-card{
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.plant-card img{
+    width: 100%;
+}
 .plant-content h2{
     font-size: 3.12rem;
+}
+.usd-20{
+    font-weight: bold;
+    font-size: 1.38rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn-plant{
+    background-color: #E95A08;
+    padding: 20px 80px;
+    width: 100%;
+    border: none;
+    color: white;
+    font-weight: 600;
 }
 
 /* responsive codes area */
@@ -79,7 +106,11 @@ main section{
     .nav-list{
         flex-direction: column;
     }
-    .banner{
+    .banner{ 
         grid-template-columns: repeat(1, 1fr);
+    }
+    .plant-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 }
