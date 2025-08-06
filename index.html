@@ -12,17 +12,26 @@
     <!-- font-awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="body-length">
     <header>
-        <!-- <div class="navbar display-flex">
+        <div class="navbar display-flex">
              <img src="./assets/logo.png" alt="image not found">
-             <ul class="nav-list display-flex inter-font">
-                <li class="home bold-16">Home</li>             
-                <li class="shop nav-list-gray">Shop</li>             
-                <li class="about nav-list-gray">About Us</li>             
-                <li><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</li>            
-             </ul>
-        </div> -->
+             <div class="display-flex">
+             <div class="ul-container-1">
+                <ul class="ul-1 nav-list display-flex inter-font">
+                    <li class="home bold-16">Home</li>             
+                    <li class="shop nav-list-gray">Shop</li>             
+                    <li class="about nav-list-gray">About Us</li>             
+                </ul>
+             </div>
+
+                <div class="ul-container-2">
+                    <ul class="ul-2 display-flex inter-font">
+                    <li class="cart"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</li>
+                    </ul>
+                </div>
+             </div>
+        </div>
 
         <div class="banner">
             <div class="banner-content">
@@ -38,7 +47,7 @@
         <section class="plant-section">
             <div class="plant-content display-flex">
             <div>
-                <h2><span class="text-orange">Our</span> Plants</h2>
+                <h2 class="section-title-h2"><span class="text-orange">Our</span> Plants</h2>
                 <p class="inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
             </div>
@@ -93,10 +102,67 @@
                 </div>
             </div>
         </section>
-        
+
+        <section class="plant-lover">
+            <div class="plant-lover-image display-flex">
+                <img src="./assets/flower-store.png" class="plant-image" alt="image not found">
+                <img src="./assets/trusted-badge.png" class="plant-badge" alt="">
+            </div>
+            <div class="plant-lover-content">
+                <h2 class="section-title-h2">Flow er & Plants <br> Lover</h2>
+                <ul class="plant-lover-ul">
+                    <li><p class="inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p></li>
+                    <li><p class="inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p></li>
+                    <li><p class="inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="deals">   
+                 <div class="deal-container">
+                    <h2 class="section-title-h2"><span class="text-orange">Latest</span> Deals</h2>
+                    <p class="inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                 </div>
+
+                 <div class="deals-card-container">
+
+                    <div class="two-card-continer">
+                        <div class="card card-1">
+                        <h3 class="noto-serif-font">60% off | Bloom Plant</h3>
+                        <p class="border inter-font">Shop Now</p>
+                    </div>
+                    <div class="card card-2">
+                        <h3 class="noto-serif-font">60% off | Bloom Plant</h3>
+                        <p class="border inter-font">Shop Now</p>
+                    </div>
+                    </div>
+                    <div class="card card-3">
+                        <h1 class="noto-serif-font">25% Off | Zabo Plant</h1>
+                        <h4 class="border inter-font">Shop Now</h4>
+                    </div>
+                    
+                 </div>
+        </section>
     </main>
     <footer>
+         <section id="colorful-bunch">
+            <h1 class="noto-serif-font">Join the colorful Bunch</h1>
+            <div class="input-container">
+                <input type="email" name="email" class="email" placeholder="Write email">
+                <button class="submit">Subscribe</button>
+            </div>
+        </section>
 
+        <section id="footer">
+            <div class="logo-container">
+                <img src="./assets/logo.png" alt="">
+                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+            </div>
+            <div class="menu-container">
+
+            </div>
+            <div class="icon-container"></div>
+        </section>
     </footer>
 </body>
 </html>
